@@ -1,0 +1,68 @@
+{
+  "products": [
+    {
+      "id": "001",
+      "name": "iphone12 Pro",
+      "description": "12th Gen Smartphone",
+      "price": 999,
+      "color": "#33505a",
+      "image": "https://th.bing.com/th/id/OIP.LphjdCa1QEpE1tchP1owlQHaHa?w=202&h=202&c=7&r=0&o=5&dpr=1.5&pid=1.7"
+    },
+    {
+      "id": "002",
+      "name": "iphone13 Pro",
+      "description": "13th Gen Smartphone",
+      "price": 1299,
+      "color": "#33505a",
+      "image": "https://th.bing.com/th/id/OIP.LphjdCa1QEpE1tchP1owlQHaHa?w=202&h=202&c=7&r=0&o=5&dpr=1.5&pid=1.7"
+    },
+    {
+      "id": "003",
+      "name": "iphone14 Pro",
+      "description": "14th Gen Smartphone",
+      "price": 1499,
+      "color": "#33505a",
+      "image": "https://th.bing.com/th/id/OIP.LphjdCa1QEpE1tchP1owlQHaHa?w=202&h=202&c=7&r=0&o=5&dpr=1.5&pid=1.7"
+    },
+    {
+      "id": "004",
+      "name": "iphone15 Pro",
+      "description": "15th Gen Smartphone",
+      "price": 1699,
+      "color": "#33505a",
+      "image": "https://th.bing.com/th/id/OIP.LphjdCa1QEpE1tchP1owlQHaHa?w=202&h=202&c=7&r=0&o=5&dpr=1.5&pid=1.7"
+    },
+    {
+      "id": "005",
+      "name": "iphone12 Pro",
+      "description": "12th Gen Smartphone",
+      "price": 999,
+      "color": "#33505a",
+      "image": "https://th.bing.com/th/id/OIP.LphjdCa1QEpE1tchP1owlQHaHa?w=202&h=202&c=7&r=0&o=5&dpr=1.5&pid=1.7"
+    },
+    {
+      "id": "006",
+      "name": "iphone13 Pro",
+      "description": "13th Gen Smartphone",
+      "price": 1299,
+      "color": "#33505a",
+      "image": "https://th.bing.com/th/id/OIP.LphjdCa1QEpE1tchP1owlQHaHa?w=202&h=202&c=7&r=0&o=5&dpr=1.5&pid=1.7"
+    },
+    {
+      "id": "007",
+      "name": "iphone14 Pro",
+      "description": "14th Gen Smartphone",
+      "price": 1499,
+      "color": "#33505a",
+      "image": "https://th.bing.com/th/id/OIP.LphjdCa1QEpE1tchP1owlQHaHa?w=202&h=202&c=7&r=0&o=5&dpr=1.5&pid=1.7"
+    },
+    {
+      "id": "008",
+      "name": "iphone15 Pro",
+      "description": "15th Gen Smartphone",
+      "price": 1699,
+      "color": "#33505a",
+      "image": "https://th.bing.com/th/id/OIP.LphjdCa1QEpE1tchP1owlQHaHa?w=202&h=202&c=7&r=0&o=5&dpr=1.5&pid=1.7"
+    }
+  ]
+}
