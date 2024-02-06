@@ -42,21 +42,48 @@ class _HomePageState extends State<HomePage> {
     // final dummyList = List.generate(50, (index) => CatalogModel.products[0]);
 
     return Scaffold(
-        appBar: AppBar(
-          title: const Text("Catalog App"),
-        ),
-        body: Padding(
-          padding: const EdgeInsets.symmetric(vertical: 16.0, horizontal: 10.0),
-          child: (CatalogModel.products != null &&
-                  CatalogModel.products.isNotEmpty)
-              ? ListView.builder(
-                  itemCount: CatalogModel.products.length,
-                  itemBuilder: (context, index) {
-                    return ItemWidget(item: CatalogModel.products[index]);
-                  },
-                )
-              : Center(child: CircularProgressIndicator()),
-        ),
-        drawer: const MyDrawer());
+      appBar: AppBar(
+        title: const Text("Catalog App"),
+      ),
+      body: Padding(
+        padding: const EdgeInsets.symmetric(vertical: 16.0, horizontal: 10.0),
+        child:
+            (CatalogModel.products != null && CatalogModel.products.isNotEmpty)
+                ? GridView.builder(
+                    gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                        crossAxisCount: 2,
+                        mainAxisSpacing: 16,
+                        crossAxisSpacing: 16),
+                    itemBuilder: (context, index) {
+                      final itemData = CatalogModel.products[index];
+                      return Card(
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(15)),
+                          clipBehavior: Clip.antiAlias,
+                          child: GridTile(
+                            header: Container(
+                              child: Text(itemData.name,
+                                  style: TextStyle(color: Colors.white)),
+                              padding: EdgeInsets.all(12),
+                              decoration: BoxDecoration(
+                                color: Colors.blue,
+                              ),
+                            ),
+                            child: Image.network(itemData.image),
+                            footer: Container(
+                              child: Text(itemData.price.toString(),
+                                  style: TextStyle(color: Colors.white)),
+                              padding: EdgeInsets.all(12),
+                              decoration: BoxDecoration(
+                                color: Color.fromARGB(255, 7, 255, 214),
+                              ),
+                            ),
+                          ));
+                    },
+                    itemCount: CatalogModel.products.length)
+                : Center(child: CircularProgressIndicator()),
+      ),
+      drawer: const MyDrawer(),
+    );
   }
 }
