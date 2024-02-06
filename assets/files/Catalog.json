@@ -1,7 +1,7 @@
 {
   "products": [
     {
-      "id": "001",
+      "id": 1,
       "name": "iphone12 Pro",
       "description": "12th Gen Smartphone",
       "price": 999,
@@ -9,7 +9,7 @@
       "image": "https://th.bing.com/th/id/OIP.LphjdCa1QEpE1tchP1owlQHaHa?w=202&h=202&c=7&r=0&o=5&dpr=1.5&pid=1.7"
     },
     {
-      "id": "002",
+      "id": 2,
       "name": "iphone13 Pro",
       "description": "13th Gen Smartphone",
       "price": 1299,
@@ -17,7 +17,7 @@
       "image": "https://th.bing.com/th/id/OIP.LphjdCa1QEpE1tchP1owlQHaHa?w=202&h=202&c=7&r=0&o=5&dpr=1.5&pid=1.7"
     },
     {
-      "id": "003",
+      "id": 3,
       "name": "iphone14 Pro",
       "description": "14th Gen Smartphone",
       "price": 1499,
@@ -25,7 +25,7 @@
       "image": "https://th.bing.com/th/id/OIP.LphjdCa1QEpE1tchP1owlQHaHa?w=202&h=202&c=7&r=0&o=5&dpr=1.5&pid=1.7"
     },
     {
-      "id": "004",
+      "id": 4,
       "name": "iphone15 Pro",
       "description": "15th Gen Smartphone",
       "price": 1699,
@@ -33,7 +33,7 @@
       "image": "https://th.bing.com/th/id/OIP.LphjdCa1QEpE1tchP1owlQHaHa?w=202&h=202&c=7&r=0&o=5&dpr=1.5&pid=1.7"
     },
     {
-      "id": "005",
+      "id": 5,
       "name": "iphone12 Pro",
       "description": "12th Gen Smartphone",
       "price": 999,
@@ -41,7 +41,7 @@
       "image": "https://th.bing.com/th/id/OIP.LphjdCa1QEpE1tchP1owlQHaHa?w=202&h=202&c=7&r=0&o=5&dpr=1.5&pid=1.7"
     },
     {
-      "id": "006",
+      "id": 6,
       "name": "iphone13 Pro",
       "description": "13th Gen Smartphone",
       "price": 1299,
@@ -49,7 +49,7 @@
       "image": "https://th.bing.com/th/id/OIP.LphjdCa1QEpE1tchP1owlQHaHa?w=202&h=202&c=7&r=0&o=5&dpr=1.5&pid=1.7"
     },
     {
-      "id": "007",
+      "id": 7,
       "name": "iphone14 Pro",
       "description": "14th Gen Smartphone",
       "price": 1499,
@@ -57,7 +57,7 @@
       "image": "https://th.bing.com/th/id/OIP.LphjdCa1QEpE1tchP1owlQHaHa?w=202&h=202&c=7&r=0&o=5&dpr=1.5&pid=1.7"
     },
     {
-      "id": "008",
+      "id": 8,
       "name": "iphone15 Pro",
       "description": "15th Gen Smartphone",
       "price": 1699,
