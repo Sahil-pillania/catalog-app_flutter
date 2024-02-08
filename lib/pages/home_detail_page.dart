@@ -26,8 +26,8 @@ class HomeDetailPage extends StatelessWidget {
                         print("clicked");
                       },
                       // shape: MaterialStateProperty.all(StadiumBorder()),
-                      child: "Buy".text.color(Vx.white).make())
-                  .wh(100, 50)
+                      child: "Add to Cart".text.color(Vx.white).make())
+                  .wh(150, 50)
             ],
           ).pOnly(right: 8.0).p12(),
         ),
