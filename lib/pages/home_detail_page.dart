@@ -31,7 +31,9 @@ class HomeDetailPage extends StatelessWidget {
             ],
           ).pOnly(right: 8.0).p12(),
         ),
-        appBar: AppBar(),
+        appBar: AppBar(
+          backgroundColor: Colors.transparent,
+        ),
         body: SafeArea(
           bottom: false,
           child: Column(
@@ -56,7 +58,12 @@ class HomeDetailPage extends StatelessWidget {
                             catalog.description.text.xl
                                 .textStyle(context.captionStyle)
                                 .make(),
-                            8.heightBox,
+                            12.heightBox,
+                            "Et eos gubergren lorem nonumy dolore eirmod sed sed, duo invidunt ut accusam stet sit eirmod. Lorem sea lorem voluptua.Et eos gubergren lorem nonumy dolore eirmod sed sed, duo invidunt ut accusam stet sit eirmod. Lorem sea lorem voluptua.Et eos gubergren lorem nonumy dolore eirmod sed sed, duo invidunt ut accusam stet sit eirmod. Lorem sea lorem voluptua."
+                                .text
+                                .textStyle(context.captionStyle)
+                                .make()
+                                .p16()
                           ],
                         ).py64(),
                       )))
