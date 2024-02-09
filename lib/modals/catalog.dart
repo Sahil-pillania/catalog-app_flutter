@@ -13,6 +13,13 @@ class CatalogModel {
   //       image:
   //           "https://th.bing.com/th/id/OIP.LphjdCa1QEpE1tchP1owlQHaHa?w=202&h=202&c=7&r=0&o=5&dpr=1.5&pid=1.7")
   // ];
+
+  // Get products by ID
+  static Item getById(int id) =>
+      products.firstWhere((element) => element.id == id, orElse: null);
+
+  // Get products by position
+  static Item getByPosition(int pos) => products[pos];
 }
 
 class Item {
