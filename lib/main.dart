@@ -18,10 +18,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: const LoginPage(),
-      themeMode: ThemeMode.light,
+      themeMode: ThemeMode.system,
       theme: MyThemes.lightTheme(context),
       darkTheme: MyThemes.darkTheme(context),
-      initialRoute: MyRoutes.homeRoute,
+      // initialRoute: MyRoutes.homeRoute,
+      initialRoute: MyRoutes.loginRoute,
       routes: {
         // "/":(context)=> HomePage(),
         MyRoutes.homeRoute: (context) => HomePage(),

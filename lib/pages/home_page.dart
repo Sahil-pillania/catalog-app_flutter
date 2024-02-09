@@ -50,19 +50,19 @@ class _HomePageState extends State<HomePage> {
     // final dummyList = List.generate(50, (index) => CatalogModel.products[0]);
 
     return Scaffold(
-      backgroundColor: MyThemes.creamColor,
+      backgroundColor: context.canvasColor,
       floatingActionButton: FloatingActionButton(
           onPressed: () {
             Navigator.pushNamed(context, MyRoutes.cartRoute);
           },
-          backgroundColor: MyThemes.darkBlueColor,
+          backgroundColor: context.theme.indicatorColor,
           child: Icon(CupertinoIcons.cart, color: Colors.white)),
       // appBar: AppBar(
       //     title: const Text("Catalog App"),
       //     ),
       body: SafeArea(
         child: Container(
-          padding: Vx.m32,
+          padding: Vx.m16,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [

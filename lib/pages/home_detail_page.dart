@@ -10,9 +10,9 @@ class HomeDetailPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: MyThemes.creamColor,
+        backgroundColor: context.canvasColor,
         bottomNavigationBar: Container(
-          color: Colors.white,
+          color: context.cardColor,
           child: ButtonBar(
             alignment: MainAxisAlignment.spaceBetween,
             // buttonPadding: Vx.mOnly(right: 16),
@@ -21,7 +21,7 @@ class HomeDetailPage extends StatelessWidget {
               ElevatedButton(
                       style: ButtonStyle(
                           backgroundColor: MaterialStateProperty.all(
-                              MyThemes.darkBlueColor)),
+                              context.theme.indicatorColor)),
                       onPressed: () {
                         print("clicked");
                       },
@@ -48,7 +48,7 @@ class HomeDetailPage extends StatelessWidget {
                       arcType: VxArcType.convey,
                       edge: VxEdge.top,
                       child: Container(
-                        color: Colors.white,
+                        color: context.cardColor,
                         width: context.screenWidth,
                         child: Column(
                           children: [
