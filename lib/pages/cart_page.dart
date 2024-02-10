@@ -33,7 +33,7 @@ class _CartTotal extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 200,
+      height: 150,
       child: Row(mainAxisAlignment: MainAxisAlignment.spaceAround, children: [
         "\$9999".text.xl4.color(context.theme.primaryColor).make(),
         30.widthBox,
@@ -41,7 +41,10 @@ class _CartTotal extends StatelessWidget {
                 style: ButtonStyle(
                     backgroundColor: MaterialStateProperty.all(
                         context.theme.indicatorColor)),
-                onPressed: () {},
+                onPressed: () {
+                  ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                      content: "Buying not supported yet.".text.make()));
+                },
                 child: "Buy".text.xl2.color(Colors.white).make())
             .w32(context),
       ]),
