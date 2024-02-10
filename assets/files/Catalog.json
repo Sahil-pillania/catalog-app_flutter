@@ -42,25 +42,25 @@
     },
     {
       "id": 6,
-      "name": "iphone13 Pro",
+      "name": "iphone13 Pro max",
       "description": "13th Gen Smartphone",
-      "price": 1299,
+      "price": 1349,
       "color": "#33505a",
       "image": "https://cdn.vodafone.co.uk/en/assets/images/desktop/Apple_iPhone_14_Pro_Max_deep_purple-full-product-front-600.png"
     },
     {
       "id": 7,
-      "name": "iphone14 Pro",
+      "name": "iphone14 Pro max",
       "description": "14th Gen Smartphone",
-      "price": 1499,
+      "price": 1459,
       "color": "#33505a",
       "image": "https://cdn.vodafone.co.uk/en/assets/images/desktop/Apple_iPhone_14_Pro_Max_deep_purple-full-product-front-600.png"
     },
     {
       "id": 8,
-      "name": "iphone15 Pro",
+      "name": "iphone15 Pro max",
       "description": "15th Gen Smartphone",
-      "price": 1699,
+      "price": 1659,
       "color": "#33505a",
       "image": "https://cdn.vodafone.co.uk/en/assets/images/desktop/Apple_iPhone_14_Pro_Max_deep_purple-full-product-front-600.png"
     }
