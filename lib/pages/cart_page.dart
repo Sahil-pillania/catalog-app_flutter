@@ -1,3 +1,4 @@
+import "package:catalog_app/core/store.dart";
 import "package:catalog_app/modals/cart.dart";
 import "package:catalog_app/modals/catalog.dart";
 import "package:catalog_app/widgets/themes.dart";
@@ -59,10 +60,11 @@ class _CartTotal extends StatelessWidget {
 }
 
 class _CartList extends StatelessWidget {
-  final _cart = CartModel();
+  // final _cart = CartModel();
 
   @override
   Widget build(BuildContext context) {
+    final CartModel _cart = (VxState.store as MyStore).cart;
     return _cart.items!.isEmpty
         ? "Nothing to show".text.xl3.makeCentered()
         : ListView.builder(
