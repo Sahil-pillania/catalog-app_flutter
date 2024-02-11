@@ -3,21 +3,15 @@ import 'package:catalog_app/modals/catalog.dart';
 import 'package:flutter/material.dart';
 import 'package:velocity_x/velocity_x.dart';
 
-class AddtoCart extends StatefulWidget {
-  const AddtoCart({required this.catalog});
+class AddtoCart extends StatelessWidget {
+  AddtoCart({required this.catalog});
 
   final Item catalog;
 
-  @override
-  State<AddtoCart> createState() => __AddtoCartState();
-}
-
-final _cart = CartModel();
-
-class __AddtoCartState extends State<AddtoCart> {
+  final _cart = CartModel();
   @override
   Widget build(BuildContext context) {
-    bool isInCart = _cart.items.contains(widget.catalog);
+    bool isInCart = _cart.items.contains(catalog);
     return ElevatedButton(
         style: ButtonStyle(
             backgroundColor:
@@ -28,11 +22,13 @@ class __AddtoCartState extends State<AddtoCart> {
             final _catalog = CatalogModel();
             final _cart = CartModel();
             _cart.catalog = _catalog;
-            _cart.add(widget.catalog);
-            setState(() {});
+            _cart.add(catalog);
+            // setState(() {});
           }
         },
         // shape: MaterialStateProperty.all(StadiumBorder()),
-        child: isInCart ? Icon(Icons.done) : Icon(Icons.add_shopping_cart));
+        child: isInCart
+            ? Icon(Icons.done)
+            : Icon(Icons.add_shopping_cart, color: Colors.white));
   }
 }

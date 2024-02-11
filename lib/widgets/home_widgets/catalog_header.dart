@@ -1,6 +1,5 @@
 import "package:velocity_x/velocity_x.dart";
 import 'package:flutter/material.dart';
-import 'package:catalog_app/widgets/themes.dart';
 
 class CatalogHeader extends StatelessWidget {
   const CatalogHeader({super.key});
