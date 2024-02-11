@@ -2,10 +2,10 @@
 import 'dart:convert';
 
 class CatalogModel {
-  static final catModel = CatalogModel._internal();
+  // static final catModel = CatalogModel._internal();
 
-  CatalogModel._internal();
-  factory CatalogModel() => catModel;
+  // CatalogModel._internal();
+  // factory CatalogModel() => catModel;
 
   static List<Item> products = [];
   // = [
@@ -25,6 +25,10 @@ class CatalogModel {
 
   // Get products by position
   Item getByPosition(int pos) => products[pos];
+
+
+
+ 
 }
 
 class Item {

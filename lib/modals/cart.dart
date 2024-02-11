@@ -1,10 +1,10 @@
 import 'package:catalog_app/modals/catalog.dart';
 
 class CartModel {
-  static final cartModel = CartModel._internal();
+  // static final cartModel = CartModel._internal();
 
-  CartModel._internal();
-  factory CartModel() => cartModel;
+  // CartModel._internal();
+  // factory CartModel() => cartModel;
 
   late CatalogModel _catalog;
 
@@ -37,4 +37,8 @@ class CartModel {
   void remove(Item item) {
     _itemIds.remove(item.id);
   }
+
+ 
+
+ 
 }
