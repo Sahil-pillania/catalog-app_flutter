@@ -1,5 +1,7 @@
 import "dart:convert";
 
+import "package:catalog_app/core/store.dart";
+import "package:catalog_app/modals/cart.dart";
 import "package:catalog_app/utils/routes.dart";
 import 'package:catalog_app/widgets/home_widgets/catalog_header.dart';
 import 'package:catalog_app/widgets/home_widgets/catalog_list.dart';
@@ -49,14 +51,25 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     // final dummyList = List.generate(50, (index) => CatalogModel.products[0]);
 
+    final _cart = (VxState.store as MyStore);
+
     return Scaffold(
       backgroundColor: context.canvasColor,
-      floatingActionButton: FloatingActionButton(
-          onPressed: () {
-            Navigator.pushNamed(context, MyRoutes.cartRoute);
-          },
-          backgroundColor: context.theme.indicatorColor,
-          child: Icon(CupertinoIcons.cart, color: Colors.white)),
+      floatingActionButton: VxBuilder(
+        mutations: {AddMutation, RemoveMutation},
+        builder: (context, _, status) => FloatingActionButton(
+                onPressed: () {
+                  Navigator.pushNamed(context, MyRoutes.cartRoute);
+                },
+                backgroundColor: context.theme.indicatorColor,
+                child: Icon(CupertinoIcons.cart, color: Colors.white))
+            .badge(
+                color: Vx.red500,
+                size: 20,
+                count: 3,
+                textStyle: TextStyle(
+                    color: Colors.black, fontWeight: FontWeight.bold)),
+      ),
       // appBar: AppBar(
       //     title: const Text("Catalog App"),
       //     ),
