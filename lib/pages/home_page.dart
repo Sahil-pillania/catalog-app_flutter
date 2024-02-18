@@ -5,7 +5,6 @@ import "package:catalog_app/modals/cart.dart";
 import "package:catalog_app/utils/routes.dart";
 import 'package:catalog_app/widgets/home_widgets/catalog_header.dart';
 import 'package:catalog_app/widgets/home_widgets/catalog_list.dart';
-import "package:catalog_app/widgets/themes.dart";
 import "package:flutter/cupertino.dart";
 import "package:flutter/material.dart";
 import "package:flutter/services.dart";
