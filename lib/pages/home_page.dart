@@ -11,8 +11,6 @@ import "package:flutter/services.dart";
 import "package:velocity_x/velocity_x.dart";
 
 import "package:catalog_app/modals/catalog.dart";
-// import "package:catalog_app/widgets/drawer.dart";
-// import "package:catalog_app/widgets/item_widget.dart";
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
