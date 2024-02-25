@@ -63,7 +63,7 @@ class _HomePageState extends State<HomePage> {
             .badge(
                 color: Vx.red500,
                 size: 20,
-                count: 3,
+                count: 0,
                 textStyle: TextStyle(
                     color: Colors.black, fontWeight: FontWeight.bold)),
       ),
