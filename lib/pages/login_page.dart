@@ -44,7 +44,7 @@ class _LoginPageState extends State<LoginPage> {
                 ),
                 const SizedBox(height: 20.0),
                 Text(
-                  "Welcome to the Catalog App $name ",
+                  "Welcome to the Catalog App ",
                   style: TextStyle(
                     fontSize: 22,
                     fontStyle: FontStyle.italic,
